@@ -1,0 +1,31 @@
+<div class="container">
+        <h1>🎫 Lottery Ticket Verifier</h1>
+        <p class="subtitle">Upload a lottery ticket image to check if it's real or fake using AI</p>
+        
+        <div class="upload-box" id="uploadBox">
+            <div class="upload-icon">📁</div>
+            <h3>Click to upload image</h3>
+            <p>JPEG, PNG formats (max 5MB)</p>
+        </div>
+        
+        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+        
+        <div id="fileName"></div>
+        
+        <button id="checkBtn">
+            <span id="btnText">🔍 Check Ticket</span>
+            <span id="btnSpinner" class="spinner" style="display: none;"></span>
+        </button>
+        
+        <div id="result">
+            Select an image and click "Check Ticket" to begin analysis.
+        </div>
+        
+        <div class="api-test">
+            <h4>🔧 API Connection Test</h4>
+            <p>Test if your API key is working:</p>
+            <button onclick="testAPIKey()">Test API Key</button>
+            <button onclick="showDebugInfo()">Show Debug Info</button>
+            <div id="apiResult" style="margin-top: 10px;"></div>
+        </div>
+    </div>
